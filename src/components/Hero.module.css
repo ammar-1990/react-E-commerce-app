@@ -1,0 +1,246 @@
+.hero {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+
+
+
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+   
+}
+
+.middle img {
+ 
+
+    width: 30rem;
+}
+
+
+.sides {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textOne {
+    font-size: 2rem;
+    width: min-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+.textTwo {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.textTwo>:first-child {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.traffic {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    
+    
+}
+.costumer {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+
+.traffic :first-child {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.costumer :first-child {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.circle {
+    width: 475px;
+    height: 475px;
+    border-radius: 50%;
+    background-color: skyblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -3;
+
+}
+
+.signup {
+    position: absolute;
+    right: 100px;
+    top: 70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.left_icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--black);
+}
+
+.tosign {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.toTitle {
+    width: 100px;
+}
+
+.rightIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:856px) {
+    .textOne ,.textTwo>:first-child{
+        font-size: 1.2rem;
+    }
+
+    .textTwo :nth-child(2){
+        font-size: 0.7rem;
+    }
+    .middle img {
+        width: 70%;
+
+        
+    }
+    .circle {
+        width:80%;
+        height:100%;
+    }
+    .hero {
+        grid-template-areas: 'left center center' 'right right right';
+        row-gap: 40px;
+        margin-bottom: 40px;
+    }
+    .sides:nth-child(1) {
+        grid-area: left;
+    }
+    .middle {
+        grid-area: center;
+    }
+
+    .sides:nth-child(3) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-area: right;
+    }
+    .traffic {
+        align-items: flex-start;
+    }
+
+    .costumer {
+        align-items: flex-start;
+    }
+
+    .traffic :first-child,.costumer :first-child {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:470px) {
+    .textOne {
+        margin-bottom: 20px;
+    }
+    .textOne ,.textTwo>:first-child{
+        font-size: 1rem;
+       
+    }
+    .traffic :first-child,.costumer :first-child {
+        font-size: 0.8rem;
+    }
+    
+   
+}
+
+@media(max-width:400px)
+{
+    .left_icon {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+    .toTitle {
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+    .tosign {
+       
+        gap: 10px;
+       
+    }
+    .rightIcon {
+        font-size: 0.7rem;
+        width: 20px;
+        height: 20px;
+    }
+
+    .textOne ,.textTwo>:first-child{
+        font-size: 1rem;
+    }
+    .traffic :first-child,.costumer :first-child {
+        font-size: 0.8rem;
+    }
+    .traffic :nth-child(2),.costumer :nth-child(2){
+        font-size: 0.7rem;
+       
+    }
+    .middle {
+  align-self: flex-end;
+    }
+    .middle img {
+        width: 160px;
+        height: 160px;
+    }
+    .circle {
+        width: 160px;
+        height: 160px;
+    }
+    .sides:nth-child(1) {
+        height: 200px;
+        flex:1;
+    }
+    .textTwo {
+        position: absolute;
+        top: 25%;
+        width: 80px;
+    }
+    
+}

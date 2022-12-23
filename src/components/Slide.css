@@ -1,0 +1,42 @@
+.slide {
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+   
+   
+}
+
+.slide div:not(:last-child) {
+    margin-bottom: 15px;
+}
+.slide .name,.slide .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    
+}
+
+.slide img {
+position: absolute;
+width:100px;
+height: 100%;
+right: -20px;
+top: 20%;
+transform: rotate(-20deg);
+}
+
+.detail ,.shop {
+    font-size: 0.7rem;
+}
+
+.shop {
+    text-align: center;
+    padding: 4px;
+    border: 1px solid skyblue;
+    border-radius: 50px;
+    cursor: pointer;
+}

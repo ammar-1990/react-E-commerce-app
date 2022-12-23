@@ -1,0 +1,50 @@
+.product {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height:140px;
+    overflow: hidden;
+    position: relative;   
+}
+
+.product .productLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.product .productLeft :first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product .productLeft :nth-child(2){
+    font-size: 10px;
+}
+
+.product .productLeft :nth-child(3){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.product .productLeft :nth-child(4) {
+    padding: 5px;
+    border: 1px solid skyblue;
+   
+    width: fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.productRight img {
+position: absolute;
+width: 100px;
+right:-30px;
+transform: rotate(-20deg);
+top: 20%;
+}

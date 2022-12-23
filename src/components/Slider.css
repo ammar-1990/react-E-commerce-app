@@ -1,0 +1,33 @@
+
+.swiper_container {
+position: relative;
+
+ 
+}
+.swiper_container .swiper {
+   width: 70%;
+ position: unset;
+
+}
+
+
+.swiper_container .swiper-button-next {
+  right:4rem;
+  top:50%
+}
+.swiper_container .swiper-button-prev {
+  left:4rem;
+  top:50%
+}
+
+
+
+.swiper_container .swiper-button-next ,.swiper_container .swiper-button-prev {
+    color: black;
+} 
+
+@media (max-width: 856px ) {
+  .swiper_container .swiper-button-prev,.swiper_container .swiper-button-next {
+    display: none;
+  }
+}

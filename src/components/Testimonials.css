@@ -1,0 +1,122 @@
+.testimonials {
+
+}
+
+.testTop {
+    display: flex;
+    padding: 2rem;
+    align-items: flex-end;
+}
+
+.testTop .testLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    flex: 1;
+    gap: 10px;
+}
+.testTop .testLeft :first-child {
+    font-size: 2rem;
+    font-weight: bold;
+ 
+}
+.testTop .testCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 2;
+  
+}
+.testTop .testCenter img {
+    width: 400px;
+}
+.testTop .testRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-transform: uppercase;
+    flex:1;
+    gap: 10px;
+   
+}
+
+.testTop .testRight :first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.testTop .testRight :nth-child(2){
+    font-size: 0.7rem;
+}
+
+.testTop .testLeft :nth-child(2) {
+    font-size: 0.7rem;
+}
+.testDown {
+    width: 100%;
+}
+.testReviews {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.testCarousal {
+
+ padding: 3rem 0 ;
+ margin: 0 15px;
+
+    
+}
+
+.testCard {
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testCard img {
+    position: absolute;
+    left: 50%;
+    top:-10%;
+    transform: translate(-50%);
+    width: 50px;
+
+}
+
+.testCard span:first-of-type {
+   letter-spacing: 1px;
+    margin-top: 40px;
+  
+}
+.testCard hr {
+    background-color: skyblue;
+    width: 75%;
+    height: 1px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width:640px){
+    .testTop {
+        flex-direction: column;
+        align-items: center;
+    }
+   .testTop .testCenter img {
+        width: 60vw;
+    }
+
+    .testTop .testLeft ,.testTop .testRight {
+        align-items: center;
+        text-align: center;
+    }
+}
