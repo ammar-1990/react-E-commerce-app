@@ -35,6 +35,7 @@ nav {
     display: flex;
     align-items: center;
     gap :40px;
+    transition: 0.4s;
  
 }
 @media(max-width:856px ){
@@ -56,10 +57,12 @@ nav {
 
    nav {
     flex-direction: column;
-    display: none;
+   
     align-items: flex-start;
-    padding: 1rem;
+
+    overflow: hidden;
    }
+   
     nav input {
         display: none;
     }

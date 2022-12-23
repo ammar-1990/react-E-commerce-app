@@ -6,7 +6,7 @@ import {useState} from 'react'
  
 const Header = () => {
 
-  const [open,setOpen] =useState(true)
+  const [open,setOpen] =useState(false)
   return (
     <div className={css.header}>
 <div className={css.logo}>
@@ -20,7 +20,7 @@ const Header = () => {
 <div className={css.bars} onClick={()=>setOpen(prev=>(!prev))}>
   <FaBars/>
 </div>
-<nav style={{display: open?'inherit' : 'none'}}>
+<nav style={{height: open?'275px' : '0',padding:open ?'0.5rem' : '0'}}>
   
   <span>Collections</span>
   <span>Brands</span>
